@@ -3,10 +3,7 @@ source 'https://rubygems.org'
 gem 'rails'
 gem 'pg'
 gem 'bootstrap-sass'
-<<<<<<< HEAD
 gem 'bcrypt-ruby'
-=======
->>>>>>> 5d2c3d130842619022d61f4914f84cbc1e803bcc
 
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'

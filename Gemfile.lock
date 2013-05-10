@@ -31,10 +31,7 @@ GEM
     annotate (2.5.0)
       rake
     arel (3.0.2)
-<<<<<<< HEAD
     bcrypt-ruby (3.0.1)
-=======
->>>>>>> 5d2c3d130842619022d61f4914f84cbc1e803bcc
     bootstrap-sass (2.3.1.0)
       sass (~> 3.2)
     builder (3.0.4)
@@ -180,10 +177,7 @@ PLATFORMS
 
 DEPENDENCIES
   annotate
-<<<<<<< HEAD
   bcrypt-ruby
-=======
->>>>>>> 5d2c3d130842619022d61f4914f84cbc1e803bcc
   bootstrap-sass
   capybara
   coffee-rails
