@@ -1,16 +1,17 @@
 source 'https://rubygems.org'
 
 gem 'rails'
-gem 'pg'
 gem 'bootstrap-sass'
 gem 'bcrypt-ruby'
+gem 'faker'
+gem 'will_paginate'
+gem 'bootstrap-will_paginate'
+gem 'pg'
 
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
 
 group :development do
-  gem 'rspec-rails'
-  gem 'guard-rspec'
   gem 'annotate'
 end
 
@@ -26,13 +27,15 @@ end
 gem 'jquery-rails'
 
 # Test gems on Macintosh OS X
-group :test do
+group :test, :development do
   gem 'rspec-rails'
-  gem 'capybara'
-  gem 'rb-fsevent', :require => false
-  gem 'growl'
+  gem 'guard-rspec'
   gem 'guard-spork'
   gem 'spork'
+end
+
+group :test do
+  gem 'capybara'
   gem 'factory_girl_rails'
   gem 'cucumber-rails', require: false
   gem 'database_cleaner'
