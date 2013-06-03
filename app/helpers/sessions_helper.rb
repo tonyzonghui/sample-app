@@ -21,6 +21,13 @@ module SessionsHelper
 		user == current_user
 	end
 
+	def signed_in_user
+		unless signed_in?
+			store_location
+			redirect_to signin_path, notice: "Please sign in."
+		end
+	end
+
 	def sign_out
 		self.current_user = nil
 		cookies.delete(:remember_token)
@@ -33,5 +40,10 @@ module SessionsHelper
 
 	def store_location
 		session[:return_to] = request.fullpath
+	end
+
+	def correct_user
+		@micropost = current_user.microposts.find_by_id(params[:id])
+		redirect_to root_path if @micropost.nil?
 	end
 end
